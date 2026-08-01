@@ -52,6 +52,16 @@ export const SKILL_CATEGORIES = [
     ],
   },
   {
+    title: "Automation Testing",
+    skills: [
+      { name: "Selenium", level: 65 },
+      { name: "Appium", level: 58 },
+      { name: "Test Sigma", level: 55 },
+      { name: "FireFlink", level: 55 },
+      { name: "Dev Assure", level: 50 },
+    ],
+  },
+  {
     title: "Tools",
     skills: [
       { name: "JIRA", level: 90 },

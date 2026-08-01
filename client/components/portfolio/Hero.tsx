@@ -3,19 +3,12 @@ import { ArrowRight, Download, Mail } from "lucide-react";
 import { PROFILE, TYPING_ROLES } from "@/data/portfolio";
 import { useTypewriter } from "@/hooks/use-typewriter";
 
+const RESUME_URL =
+  "https://cdn.builder.io/o/assets%2F4678ea43c32345ab866c38b668a08375%2Fbe3a44b3313e4947bc526ce2eaf3c3ae?alt=media&token=78e8e9ab-287a-4966-ac88-7dd1834dccb9&apiKey=4678ea43c32345ab866c38b668a08375";
+
 export default function Hero() {
   const typed = useTypewriter(TYPING_ROLES);
 
-  const downloadResume = () => {
-    const resume = `A. Soumya Smita\nQA Engineer | Manual Testing | API Testing | Deployment Testing\n\n${PROFILE.intro}\n\nExperience\nOneHubPOS — QA Engineer\nRobowaves — QA Intern\n\nSkills\nManual Testing · Regression Testing · API Testing · JIRA · Postman · Agile Scrum · Selenium\n\nContact\n${PROFILE.email} · ${PROFILE.phone}`;
-    const blob = new Blob([resume], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "A-Soumya-Smita-Resume.txt";
-    link.click();
-    URL.revokeObjectURL(url);
-  };
 
   return (
     <section
@@ -49,10 +42,14 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <button onClick={downloadResume} className="btn-neon">
+            <a
+              href={RESUME_URL}
+              download="A-Soumya-Smita-Resume.docx"
+              className="btn-neon"
+            >
               <Download className="h-4 w-4" />
               Download Resume
-            </button>
+            </a>
             <a
               href="#contact"
               onClick={(e) => {

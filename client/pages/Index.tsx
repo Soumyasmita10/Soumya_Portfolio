@@ -1,62 +1,49 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import About from "@/components/portfolio/About";
+import Achievements from "@/components/portfolio/Achievements";
+import BackToTop from "@/components/portfolio/BackToTop";
+import Certifications from "@/components/portfolio/Certifications";
+import Contact from "@/components/portfolio/Contact";
+import CursorGlow from "@/components/portfolio/CursorGlow";
+import Education from "@/components/portfolio/Education";
+import Experience from "@/components/portfolio/Experience";
+import Footer from "@/components/portfolio/Footer";
+import Hero from "@/components/portfolio/Hero";
+import Loader from "@/components/portfolio/Loader";
+import Navbar from "@/components/portfolio/Navbar";
+import ParticlesBackground from "@/components/portfolio/ParticlesBackground";
+import Projects from "@/components/portfolio/Projects";
+import ScrollProgress from "@/components/portfolio/ScrollProgress";
+import Skills from "@/components/portfolio/Skills";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
   useEffect(() => {
-    fetchDemo();
+    document.documentElement.classList.add("dark");
+    return () => document.documentElement.classList.remove("dark");
   }, []);
 
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
+    <div className="relative min-h-screen overflow-hidden bg-background text-foreground">
+      <Loader />
+      <ScrollProgress />
+      <CursorGlow />
+      <ParticlesBackground />
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Achievements />
+          <Education />
+          <Certifications />
+          <Contact />
+        </main>
+        <Footer />
       </div>
+      <BackToTop />
     </div>
   );
 }

@@ -6,6 +6,17 @@ import { useTypewriter } from "@/hooks/use-typewriter";
 export default function Hero() {
   const typed = useTypewriter(TYPING_ROLES);
 
+  const downloadResume = () => {
+    const resume = `A. Soumya Smita\nQA Engineer | Manual Testing | API Testing | Deployment Testing\n\n${PROFILE.intro}\n\nExperience\nOneHubPOS — QA Engineer\nRobowaves — QA Intern\n\nSkills\nManual Testing · Regression Testing · API Testing · JIRA · Postman · Agile Scrum · Selenium\n\nContact\n${PROFILE.email} · ${PROFILE.phone}`;
+    const blob = new Blob([resume], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "A-Soumya-Smita-Resume.txt";
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <section
       id="home"
@@ -38,10 +49,10 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href={PROFILE.resume} download className="btn-neon">
+            <button onClick={downloadResume} className="btn-neon">
               <Download className="h-4 w-4" />
               Download Resume
-            </a>
+            </button>
             <a
               href="#contact"
               onClick={(e) => {

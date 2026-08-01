@@ -130,8 +130,6 @@ export const PROJECTS = [
       "Billing",
       "Inventory",
       "CRM",
-      "KDS Billing",
-      "KOT",
       "Barcode",
       "Auto Day End",
       "Discount",

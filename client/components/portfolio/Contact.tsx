@@ -35,7 +35,7 @@ export default function Contact() {
             </a>
             <div className="glass-card flex items-center gap-4 p-5">
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-neon-pink/15 text-neon-pink"><MapPin className="h-5 w-5" /></span>
-              <span><span className="block text-xs uppercase tracking-wider text-muted-foreground">Location</span><span className="text-sm font-medium">India · Open to opportunities</span></span>
+              <span><span className="block text-xs uppercase tracking-wider text-muted-foreground">Location</span><span className="text-sm font-medium">Bangalore · Open to opportunities</span></span>
             </div>
             <div className="flex gap-3 pt-2">
               <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="btn-outline-neon h-11 w-11 !p-0"><Linkedin className="h-4 w-4" /></a>

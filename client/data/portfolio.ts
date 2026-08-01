@@ -4,8 +4,8 @@ export const PROFILE = {
   title: "QA Engineer | Manual Testing | API Testing | Deployment Testing",
   intro:
     "QA Engineer with 2+ years of experience in Manual Testing of POS, Cloud, Kiosk, Table Ordering, Payment Applications, and API Testing. Passionate about delivering high-quality software.",
-  email: "soumya.smita.qa@gmail.com",
-  phone: "+91 90000 00000",
+  email: "soumyasmita10@gmail.com",
+  phone: "+91 63705 11305",
   linkedin: "https://linkedin.com/in/soumya-smita",
   github: "https://github.com/soumya-smita",
   resume: "/resume.pdf",

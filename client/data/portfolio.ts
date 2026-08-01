@@ -164,10 +164,9 @@ export const PROJECTS = [
     description:
       "QA for localized payment integrations, restaurant workflows, hardware, CRM, and cloud sync.",
     tags: [
-      "Dejavoo Payment",
-      "Retail POS",
       "CRM",
-      "KDS Billing",
+      "KDS",
+      "Billing",
       "KOT",
       "Barcode",
       "Auto Day End",
@@ -175,7 +174,6 @@ export const PROJECTS = [
       "Dynamic QR",
       "Swiggy",
       "Zomato",
-      "eShop",
       "Inventory",
       "Printer SDK",
       "Bluetooth Printer",

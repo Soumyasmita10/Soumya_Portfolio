@@ -187,7 +187,7 @@ export const ACHIEVEMENTS = [
   { label: "Engineering Excellence Award", value: 1, suffix: "" },
   { label: "Bugs Reported", value: 1000, suffix: "+" },
   { label: "Test Cases Written", value: 600, suffix: "+" },
-  { label: "Requirement Coverage", value: 100, suffix: "%" },
+  { label: "Requirement Coverage", value: 90, suffix: "%" },
   { label: "Reduction in Late Defects", value: 30, suffix: "%" },
   { label: "Production Releases", value: 12, suffix: "+" },
 ];

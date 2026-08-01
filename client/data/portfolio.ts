@@ -144,9 +144,7 @@ export const PROJECTS = [
     description:
       "Testing across the full restaurant ecosystem — POS, cloud, kiosk, ordering, billing, and payments.",
     tags: [
-      "Retail POS",
       "Cloud",
-      "CRM",
       "KDS",
       "Billing",
       "KOT",

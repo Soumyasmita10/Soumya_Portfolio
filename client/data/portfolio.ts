@@ -135,6 +135,7 @@ export const PROJECTS = [
       "Discount",
       "Promotions",
       "Payment",
+      "Dejavoo Payment",
       "Reports",
     ],
   },

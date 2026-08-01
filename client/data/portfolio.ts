@@ -158,7 +158,7 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Dejavoo Payment · India Restaurant POS",
+    title: "India Restaurant POS",
     description:
       "QA for Dejavoo and localized payment integrations, restaurant workflows, hardware, CRM, and cloud sync.",
     tags: [

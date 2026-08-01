@@ -211,4 +211,8 @@ export const CERTIFICATIONS = [
     title: "Agile & Scrum Foundations",
     issuer: "Self-paced Certification",
   },
+  {
+    title: "Automation Testing",
+    issuer: "Selenium · Appium · No-code Tools",
+  },
 ];

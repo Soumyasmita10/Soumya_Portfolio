@@ -39,7 +39,7 @@ export const SKILL_CATEGORIES = [
   {
     title: "Testing",
     skills: [
-      { name: "Functional Testing", level: 95 },
+      { name: "Functional Testing", level: 90 },
       { name: "Regression Testing", level: 92 },
       { name: "Integration Testing", level: 85 },
       { name: "System Testing", level: 85 },

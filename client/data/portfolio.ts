@@ -125,12 +125,13 @@ export const PROJECTS = [
   {
     title: "Retail POS & Cloud Platform",
     description:
-      "End-to-end quality assurance for a retail point-of-sale and cloud management platform.",
+      "End-to-end quality assurance for a retail point-of-sale and cloud management platform, including billing, inventory, payment, barcode, and printer workflows.",
     tags: [
       "Billing",
       "Inventory",
       "CRM",
       "Barcode",
+      "Printer",
       "Auto Day End",
       "Discount",
       "Promotions",

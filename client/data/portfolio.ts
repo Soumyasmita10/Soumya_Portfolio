@@ -148,6 +148,7 @@ export const PROJECTS = [
       "Cloud",
       "KDS",
       "Billing",
+      "Dynamic Discount",
       "KOT",
       "Barcode",
       "Auto Day End",

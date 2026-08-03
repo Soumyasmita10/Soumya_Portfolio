@@ -26,9 +26,17 @@ function Counter({
           href={image}
           target="_blank"
           rel="noreferrer"
-          className="btn-outline-neon mb-2 !px-4 !py-2 text-xs"
+          className="group mb-2 block w-full"
         >
-          View Award Certificate
+          <img
+            src={image}
+            alt="Engineering Excellence Award certificate"
+            loading="lazy"
+            className="h-32 w-full rounded-xl bg-white object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+          />
+          <span className="mt-2 block text-xs font-semibold text-neon-blue transition-colors group-hover:text-neon-purple">
+            View Award Certificate
+          </span>
         </a>
       )}
       <Award className="h-6 w-6 text-neon-purple" />

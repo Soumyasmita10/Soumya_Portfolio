@@ -18,13 +18,15 @@ export default function About() {
             Detail-driven QA professional
           </h2>
           <p className="mt-5 text-muted-foreground">
-            I specialize in ensuring software quality across POS, cloud,
-            kiosk, table ordering, and payment applications. From manual and
-            regression testing to API validation and deployment
-            verification, I bring a methodical, recruiter-friendly approach
-            to every release cycle — collaborating closely with cross
-            functional teams in Agile environments to ship dependable
-            software.
+            QA Engineer specializing in software quality assurance for POS,
+            cloud, kiosk, table-ordering, payment, web, and mobile
+            applications. My core expertise includes test planning, test case
+            design, functional testing, regression testing, integration
+            testing, system testing, smoke testing, sanity testing, UAT, API
+            testing, cross-browser testing, and deployment verification. I
+            manage defects through Jira, validate APIs with Postman, and
+            collaborate with developers and product teams in Agile/Scrum
+            environments.
           </p>
         </motion.div>
 

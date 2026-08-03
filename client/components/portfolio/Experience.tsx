@@ -42,16 +42,14 @@ export default function Experience() {
                     <p className="text-sm font-medium text-muted-foreground">
                       {exp.company}
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <ul className="mt-4 space-y-2 text-sm leading-relaxed text-muted-foreground">
                       {exp.points.map((point) => (
-                        <span
-                          key={point}
-                          className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-foreground/80"
-                        >
-                          {point}
-                        </span>
+                        <li key={point} className="flex gap-2">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-neon-blue" />
+                          <span>{point}</span>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </div>
                 </div>
               </motion.div>

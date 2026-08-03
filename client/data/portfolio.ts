@@ -3,7 +3,7 @@ export const PROFILE = {
   initials: "SS",
   title: "QA Engineer | Manual Testing | API Testing | Deployment Testing",
   intro:
-    "QA Engineer with 2+ years of experience in Manual Testing of POS, Cloud, Kiosk, Table Ordering, Payment Applications, and API Testing. Passionate about delivering high-quality software.",
+    "QA Engineer with 2+ years of experience in manual and functional testing of POS, cloud, kiosk, table-ordering, payment, and web applications. Skilled in test case design, regression, integration, smoke, UAT, API, cross-browser, and deployment testing, with hands-on Jira and Postman experience. Proven in defect tracking, release validation, and Agile/Scrum collaboration to improve product quality.",
   email: "soumyasmita10@gmail.com",
   phone: "+91 63705 11305",
   linkedin: "https://linkedin.com/in/soumya-smita",

@@ -22,12 +22,14 @@ function Counter({
       className="glass-card flex flex-col items-center gap-2 overflow-hidden p-6 text-center"
     >
       {image && (
-        <img
-          src={image}
-          alt="Engineering Excellence Award certificate"
-          loading="lazy"
-          className="mb-2 h-32 w-full rounded-xl object-cover object-center"
-        />
+        <a
+          href={image}
+          target="_blank"
+          rel="noreferrer"
+          className="btn-outline-neon mb-2 !px-4 !py-2 text-xs"
+        >
+          View Award Certificate
+        </a>
       )}
       <Award className="h-6 w-6 text-neon-purple" />
       <span className="font-display text-3xl font-bold text-gradient sm:text-4xl">

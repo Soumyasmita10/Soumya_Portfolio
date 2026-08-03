@@ -186,7 +186,13 @@ export const PROJECTS = [
 ];
 
 export const ACHIEVEMENTS = [
-  { label: "Engineering Excellence Award", value: 1, suffix: "" },
+  {
+    label: "Engineering Excellence Award",
+    value: 1,
+    suffix: "",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F4678ea43c32345ab866c38b668a08375%2F17c5f229b28241dc95a073257ad811b1?format=webp&width=800&height=1200",
+  },
   { label: "Bugs Reported", value: 1000, suffix: "+" },
   { label: "Test Cases Written", value: 600, suffix: "+" },
   { label: "Requirement Coverage", value: 90, suffix: "%" },

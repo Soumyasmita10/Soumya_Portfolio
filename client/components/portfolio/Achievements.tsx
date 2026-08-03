@@ -7,18 +7,28 @@ function Counter({
   value,
   suffix,
   label,
+  image,
 }: {
   value: number;
   suffix: string;
   label: string;
+  image?: string;
 }) {
   const { ref, value: current } = useCountUp(value);
 
   return (
     <div
       ref={ref as any}
-      className="glass-card flex flex-col items-center gap-2 p-6 text-center"
+      className="glass-card flex flex-col items-center gap-2 overflow-hidden p-6 text-center"
     >
+      {image && (
+        <img
+          src={image}
+          alt="Engineering Excellence Award certificate"
+          loading="lazy"
+          className="mb-2 h-32 w-full rounded-xl object-cover object-center"
+        />
+      )}
       <Award className="h-6 w-6 text-neon-purple" />
       <span className="font-display text-3xl font-bold text-gradient sm:text-4xl">
         {current}
@@ -47,7 +57,12 @@ export default function Achievements() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
-              <Counter value={item.value} suffix={item.suffix} label={item.label} />
+              <Counter
+                value={item.value}
+                suffix={item.suffix}
+                label={item.label}
+                image={item.image}
+              />
             </motion.div>
           ))}
         </div>
